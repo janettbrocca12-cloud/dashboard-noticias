@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Dashboard Noticias</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --canvas: #edf3f8;
+      --surface: #fff;
+      --ink: #122741;
+      --muted: #52677d;
+      --line: #d5e1ea;
+      --accent: #006d67;
+      --tint: #def5f1;
+      --track: #e6eef5;
+      --warning: #784a0d;
+      --warning-bg: #fff1d9;
+      --danger: #a32939;
+      --danger-bg: #fce8eb;
+      --nav: #0b1c32;
+      --radius: 16px;
+      --shadow: 0 4px 16px #12274108;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --canvas: #081423;
+      --surface: #102239;
+      --ink: #edf6ff;
+      --muted: #acc1d5;
+      --line: #2b425a;
+      --accent: #62e0cf;
+      --tint: #163b43;
+      --track: #233a51;
+      --warning: #ffda91;
+      --warning-bg: #372b1c;
+      --danger: #ffc0c8;
+      --danger-bg: #402430;
+      --shadow: none;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    body { margin: 0; background: var(--canvas); color: var(--ink); }
+    button, input, select { font: inherit; }
+    button { cursor: pointer; }
+    button:disabled { cursor: default; opacity: .55; }
+    a { color: var(--accent); }
+    :focus-visible { outline: 3px solid #1aa899; outline-offset: 3px; }
+    h1, h2, h3, p, dl, dd { margin: 0; }
+    .skip { position: fixed; z-index: 2; top: 12px; left: 12px; padding: 10px; background: var(--surface); transform: translateY(-150%); }
+    .skip:focus { transform: none; }
+    .layout { display: grid; grid-template-columns: 224px minmax(0, 1fr); min-height: 100vh; }
+
+    .sidebar {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+      padding: 27px 16px 18px;
+      background: var(--nav);
+      color: #fff;
+    }
+
+    .brand { display: flex; align-items: center; gap: 11px; padding-inline: 5px; font-weight: 750; line-height: 1.15; }
+    .brand-mark { flex: 0 0 37px; padding: 8px; border-radius: 10px; background: #173e50; color: #66e8d4; }
+    .sidebar nav { display: grid; gap: 5px; }
+    .nav-label { margin: 0 10px 5px; color: #a6bed4; }
+    .nav-label, .eyebrow { font-size: .69rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+    .nav-item, .theme {
+      padding: 10px 11px;
+      border: 1px solid transparent;
+      border-radius: 9px;
+      background: transparent;
+      color: #c4d7ea;
+      text-align: left;
+      font-size: .88rem;
+    }
+
+    .nav-item:hover, .theme:hover { background: #1a324c; color: #fff; }
+    .nav-item[aria-current="true"] { border-color: #295969; background: #143949; color: #87f1df; font-weight: 700; }
+    .theme { margin-top: auto; border-color: #375069; }
+    main { width: 100%; max-width: 1520px; margin-inline: auto; padding: 26px clamp(16px, 3vw, 46px) 40px; min-width: 0; }
+    .top, .panel-heading, .story-meta, .actions, .collection {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+    }
+
+    .top { justify-content: space-between; margin-bottom: 18px; }
+    .collection { font-size: .81rem; color: var(--muted); }
+    .collection strong { color: var(--ink); font-variant-numeric: tabular-nums; }
+
+    .status {
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: var(--track);
+      color: var(--ink);
+      font-size: .73rem;
+      font-weight: 750;
+    }
+
+    .status[data-state="ok"] { color: var(--accent); background: var(--tint); }
+    .status[data-state="partial"] { color: var(--warning); background: var(--warning-bg); }
+    .status[data-state="error"] { color: var(--danger); background: var(--danger-bg); }
+
+    .button {
+      min-height: 39px;
+      padding: 8px 13px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: var(--surface);
+      color: var(--ink);
+      font-size: .83rem;
+      font-weight: 700;
+    }
+
+    .button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+    .button-primary { background: var(--tint); color: var(--accent); }
+
+    .hero {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 176px;
+      padding: 25px clamp(20px, 4vw, 40px);
+      border: 1px solid #255869;
+      border-radius: var(--radius);
+      background: linear-gradient(112deg, #102642 23%, #104957 100%);
+      color: #fff;
+    }
+
+    .hero::after {
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      content: "";
+      background-image: linear-gradient(#72e9dd2e 1px, transparent 1px),
+                        linear-gradient(90deg, #72e9dd2e 1px, transparent 1px);
+      background-size: 25px 25px;
+      mask-image: linear-gradient(90deg, transparent 32%, #000 100%);
+    }
+
+    .hero .eyebrow { color: #8df1e0; }
+    h1 { margin-block: 5px 8px; font-size: clamp(1.9rem, 4vw, 3.05rem); line-height: 1.06; letter-spacing: -.045em; }
+    .hero p:last-child { font-size: .93rem; color: #e0f0f8; }
+
+    .notice { margin-top: 16px; padding: 12px 15px; border-radius: 10px; background: var(--surface); color: var(--muted); font-size: .87rem; overflow-wrap: anywhere; }
+    .notice ul { margin-block: 8px 0; padding-inline-start: 20px; }
+    .notice[data-tone="warning"] { color: var(--warning); background: var(--warning-bg); }
+    .notice[data-tone="error"] { color: var(--danger); background: var(--danger-bg); }
+
+    .metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-block: 16px; }
+    .metric, .panel, .story, .empty { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
+    .metric { min-width: 0; padding: 15px; }
+    .metric dt { font-size: .78rem; font-weight: 650; color: var(--muted); }
+    .metric dd { margin-top: 6px; font-size: clamp(1.35rem, 2.7vw, 2rem); font-weight: 750; letter-spacing: -.04em; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+    .metric:first-child dd { color: var(--accent); }
+
+    .overview { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); gap: 14px; }
+    .panel { padding: 17px; min-width: 0; }
+    h2 { font-size: 1.06rem; letter-spacing: -.018em; }
+    .panel-heading { justify-content: space-between; margin-bottom: 13px; }
+    .fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .wide { grid-column: 1 / -1; }
+    label { display: grid; gap: 4px; min-width: 0; font-size: .76rem; font-weight: 700; color: var(--muted); }
+    input, select {
+      width: 100%;
+      min-width: 0;
+      min-height: 39px;
+      padding: 6px 8px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--canvas);
+      color: var(--ink);
+      font-size: .86rem;
+    }
+
+    .count, .chart-empty { color: var(--muted); font-size: .82rem; }
+    .bar-list { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+    .bar-label { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 4px; font-size: .8rem; }
+    .bar-label span:first-child { overflow-wrap: anywhere; }
+    .bar-value { flex: none; color: var(--muted); font-variant-numeric: tabular-nums; }
+    .track { height: 7px; border-radius: 999px; background: var(--track); overflow: hidden; }
+    .fill { display: block; height: 100%; border-radius: inherit; background: var(--accent); }
+
+    .feed { margin-top: 21px; }
+    .stories { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .story { display: flex; flex-direction: column; gap: 9px; padding: 16px; min-width: 0; overflow-wrap: anywhere; }
+    .story-meta { color: var(--muted); font-size: .77rem; }
+    .tag { padding: 3px 8px; border-radius: 999px; background: var(--tint); color: var(--accent); font-size: .72rem; font-weight: 750; }
+    .story h3 { font-size: 1rem; line-height: 1.4; }
+    .story h3 a { color: var(--ink); text-decoration: none; }
+    .story h3 a:hover { color: var(--accent); text-decoration: underline; }
+    .story > a { margin-top: auto; align-self: flex-start; font-size: .8rem; font-weight: 700; text-underline-offset: 3px; }
+    .empty { padding: 24px; color: var(--muted); font-size: .91rem; line-height: 1.55; }
+    .empty strong { display: block; color: var(--ink); margin-bottom: 5px; }
+    .empty p + p { margin-top: 8px; }
+    .more { display: block; margin: 14px auto 0; }
+
+    @media (max-width: 960px) {
+      .layout { grid-template-columns: 170px minmax(0, 1fr); }
+      .sidebar { padding-inline: 11px; }
+      .overview { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 680px) {
+      .layout { display: block; }
+      .sidebar { position: static; height: auto; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 10px; padding: 10px 12px; }
+      .sidebar nav { grid-column: 1 / -1; display: flex; flex-wrap: wrap; }
+      .nav-label { display: none; }
+      .nav-item, .theme { padding: 8px; font-size: .78rem; }
+      .theme { grid-area: 1 / 2; margin: 0; }
+      main { padding-top: 15px; }
+      .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stories { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#principal">Ir al contenido</a>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">
+        <svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+          <path d="M7 9h4v6H7zM14 9h3m-3 3h3m-3 3h3"></path>
+        </svg>
+        <span>Dashboard<br>Noticias</span>
+      </div>
+      <nav id="sections" aria-label="Secciones">
+        <p class="nav-label">Cobertura</p>
+        <button class="nav-item" type="button" data-category="" aria-current="true">Vista general</button>
+        <button class="nav-item" type="button" data-category="México">México</button>
+        <button class="nav-item" type="button" data-category="Estados Unidos">Estados Unidos</button>
+        <button class="nav-item" type="button" data-category="Mercados">Mercados</button>
+        <button class="nav-item" type="button" data-category="Política">Política</button>
+      </nav>
+      <button class="theme" id="theme" type="button">Tema oscuro</button>
+    </aside>
+
+    <main id="principal" tabindex="-1">
+      <header class="top">
+        <div class="collection">
+          <span class="status" id="status" role="status">Cargando</span>
+          <span>Última recopilación · <strong id="generated">—</strong></span>
+        </div>
+        <div class="actions">
+          <button class="button" id="export" type="button" disabled>Exportar CSV</button>
+          <button class="button button-primary" id="refresh" type="button" disabled>Refresh</button>
+        </div>
+      </header>
+
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow" id="scope">Vista general</p>
+        <h1 id="page-title">Dashboard Noticias</h1>
+        <p>Noticias económicas, financieras y políticas</p>
+      </section>
+
+      <div class="notice" id="notice" role="status" hidden></div>
+
+      <dl class="metrics" aria-label="Indicadores de la última carga">
+        <div class="metric"><dt>Titulares recopilados</dt><dd id="total">—</dd></div>
+        <div class="metric"><dt>Nuevos en la recopilación</dt><dd id="new">—</dd></div>
+        <div class="metric"><dt>Fuentes consultadas con éxito</dt><dd id="sources">—</dd></div>
+        <div class="metric"><dt>Temas en los resultados</dt><dd id="topics">—</dd></div>
+      </dl>
+
+      <div class="overview">
+        <section class="panel" aria-labelledby="filter-title">
+          <div class="panel-heading">
+            <h2 id="filter-title">Buscar y filtrar</h2>
+            <button class="button" id="clear" type="button">Limpiar filtros</button>
+          </div>
+          <div class="fields">
+            <label class="wide">Buscar titulares y fuentes
+              <input id="query" type="search" placeholder="Buscar por palabra o medio…" autocomplete="off">
+            </label>
+            <label>Categoría
+              <select id="category"><option value="">Todas las categorías</option></select>
+            </label>
+            <label>Fuente
+              <select id="source"><option value="">Todas las fuentes</option></select>
+            </label>
+            <label>Publicación desde <input id="from" type="date"></label>
+            <label>Publicación hasta <input id="to" type="date"></label>
+            <p class="wide count" id="date-error" role="status" hidden>La fecha inicial debe ser anterior o igual a la fecha final.</p>
+          </div>
+        </section>
+
+        <section class="panel" aria-labelledby="chart-title">
+          <div class="panel-heading"><h2 id="chart-title">Distribución temática</h2></div>
+          <p class="chart-empty" id="chart-empty">Cargando distribución…</p>
+          <ul class="bar-list" id="chart"></ul>
+        </section>
+      </div>
+
+      <section class="feed" aria-labelledby="feed-title">
+        <div class="panel-heading">
+          <h2 id="feed-title">Titulares</h2>
+          <p class="count" id="result-count" role="status"></p>
+        </div>
+        <div class="empty" id="empty">
+          <strong id="empty-title">Cargando titulares…</strong>
+          <p id="empty-text"></p>
+          <p id="workflow" hidden>Para recopilar noticias, abre GitHub y ve a tu repositorio → Actions → Actualizar noticias y publicar dashboard → Run workflow → Run workflow. Cuando termine la publicación, pulsa Refresh.</p>
+        </div>
+        <div class="stories" id="stories"></div>
+        <button class="button more" id="more" type="button" hidden>Mostrar más titulares</button>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    'use strict';
+
+    const byId = id => document.getElementById(id);
+    const sections = Array.from(document.querySelectorAll('#sections [data-category]'));
+    const standardCategories = sections.map(button => button.dataset.category).filter(Boolean);
+    const controls = ['query', 'category', 'source', 'from', 'to'].map(byId);
+    const dateTime = new Intl.DateTimeFormat('es-MX', {
+      dateStyle: 'medium', timeStyle: 'short', timeZone: 'America/Mexico_City'
+    });
+    const calendar = new Intl.DateTimeFormat('en', {
+      year: 'numeric', month: '2-digit', day: '2-digit', timeZone: 'America/Mexico_City'
+    });
+    const numbers = new Intl.NumberFormat('es-MX');
+    const percentages = new Intl.NumberFormat('es-MX', { style: 'percent', maximumFractionDigits: 1 });
+    const labels = { pending: 'Pendiente', ok: 'Disponible', partial: 'Cobertura parcial', error: 'Error' };
+    const pageSize = 12;
+    let report = null;
+    let articles = [];
+    let results = [];
+    let visible = pageSize;
+    let loading = false;
+    let loadError = '';
+
+    function make(tag, content, className) {
+      const element = document.createElement(tag);
+      if (content !== undefined) element.textContent = content;
+      if (className) element.className = className;
+      return element;
+    }
+
+    function normalize(value) {
+      return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('es-MX');
+    }
+
+    function clean(value, fallback = '') {
+      return typeof value === 'string' && value.trim() ? value.trim() : fallback;
+    }
+
+    function dateOf(value) {
+      if (typeof value !== 'string' || !value.trim()) return null;
+      const date = new Date(value);
+      return Number.isNaN(date.getTime()) ? null : date;
+    }
+
+    function dateKey(date) {
+      if (!date) return '';
+      const parts = Object.fromEntries(calendar.formatToParts(date).map(part => [part.type, part.value]));
+      return parts.year + '-' + parts.month + '-' + parts.day;
+    }
+
+    function safeLink(value) {
+      try {
+        const url = new URL(clean(value));
+        return ['https:', 'http:'].includes(url.protocol) ? url.href : '';
+      } catch {
+        return '';
+      }
+    }
+
+    function parseArticle(article) {
+      const published = dateOf(article.published_at);
+      const collected = dateOf(article.collected_at);
+      const suppliedCategory = clean(article.category, 'Sin categoría');
+      const category = standardCategories.find(name => normalize(name) === normalize(suppliedCategory)) || suppliedCategory;
+      const title = clean(article.title, 'Titular sin título');
+      const source = clean(article.source, 'Fuente sin identificar');
+      return {
+        id: article.id,
+        title,
+        source,
+        category,
+        url: safeLink(article.url),
+        published,
+        collected,
+        day: dateKey(published),
+        search: normalize([title, source, category].join(' '))
+      };
+    }
+
+    function sortLabels(values) {
+      return [...new Set(values)].sort((a, b) => a.localeCompare(b, 'es-MX'));
+    }
+
+    function setOptions(id, values, placeholder) {
+      const select = byId(id);
+      const selected = select.value;
+      select.replaceChildren(new Option(placeholder, ''));
+      values.forEach(value => select.add(new Option(value, value)));
+      if (values.includes(selected)) select.value = selected;
+    }
+
+    function showStatus() {
+      const status = byId('status');
+      const state = loadError ? 'error' : report?.status;
+      status.textContent = loading ? 'Cargando' : (labels[state] || 'Pendiente');
+      status.dataset.state = loading ? '' : (state || '');
+      byId('refresh').disabled = loading;
+      byId('refresh').textContent = loading ? 'Leyendo…' : 'Refresh';
+
+      const generated = dateOf(report?.generated_at);
+      byId('generated').replaceChildren();
+      if (generated) {
+        const time = make('time', dateTime.format(generated) + ' · CDMX');
+        time.dateTime = generated.toISOString();
+        byId('generated').append(time);
+      } else {
+        byId('generated').textContent = report ? 'Sin fecha registrada' : '—';
+      }
+
+      const notice = byId('notice');
+      const messages = [];
+      if (loadError) messages.push(loadError);
+      if (loadError && report) messages.push('Se muestran los datos de la última lectura correcta.');
+      if (report?.status === 'partial') messages.push('La recopilación es parcial. Algunas fuentes no aportaron datos.');
+      if (report?.status === 'error') messages.push('El proceso de recopilación informó un error.');
+      if (report?.status === 'pending') messages.push('La recopilación está pendiente.');
+      if (report && Number.isFinite(report.sources_ok) && Number.isFinite(report.sources_total) &&
+          report.sources_ok < report.sources_total && !['partial', 'error', 'pending'].includes(report.status)) {
+        messages.push('Algunas fuentes no se pudieron consultar.');
+      }
+
+      const errors = Array.isArray(report?.errors) ? report.errors.filter(item => typeof item === 'string' && item.trim()) : [];
+      notice.replaceChildren(...messages.map(message => make('p', message)));
+      if (errors.length) {
+        const list = make('ul');
+        errors.forEach(error => list.append(make('li', error)));
+        notice.append(list);
+      }
+      notice.hidden = messages.length === 0 && errors.length === 0;
+      notice.dataset.tone = state === 'error' ? 'error' : (messages.length || errors.length ? 'warning' : '');
+    }
+
+    async function refresh() {
+      if (loading) return;
+      loading = true;
+      loadError = '';
+      showStatus();
+      renderStories();
+      try {
+        const response = await fetch('./noticias.json?t='+Date.now(), {cache:'no-store'});
+        if (!response.ok) throw new Error('El archivo noticias.json devolvió un error HTTP ' + response.status + '.');
+        let payload;
+        try {
+          payload = await response.json();
+        } catch {
+          throw new Error('El archivo noticias.json no contiene JSON válido.');
+        }
+        if (!payload || !Object.hasOwn(labels, payload.status) || !Array.isArray(payload.articles)) {
+          throw new Error('El archivo noticias.json no cumple el formato del dashboard.');
+        }
+
+        const nextArticles = payload.articles
+          .filter(article => article && typeof article === 'object' && !Array.isArray(article))
+          .map(parseArticle)
+          .sort((a, b) => (b.published ?? b.collected ?? 0) - (a.published ?? a.collected ?? 0));
+        report = payload;
+        articles = nextArticles;
+        setOptions('category', [...standardCategories, ...sortLabels(
+          articles.map(article => article.category).filter(category => !standardCategories.includes(category))
+        )], 'Todas las categorías');
+        setOptions('source', sortLabels(articles.map(article => article.source)), 'Todas las fuentes');
+        visible = pageSize;
+      } catch (error) {
+        const hint = location.protocol === 'file:'
+          ? ' Abre la página publicada en GitHub Pages para que pueda leer noticias.json.'
+          : ' Comprueba que el archivo esté publicado junto a index.html y pulsa Refresh.';
+        loadError = error instanceof TypeError
+          ? 'No se pudo leer noticias.json.' + hint
+          : error.message + hint;
+      } finally {
+        loading = false;
+        showStatus();
+        updateResults();
+      }
+    }
+
+    function updateResults() {
+      const [query, category, source, from, to] = controls.map(control => control.value);
+      const terms = normalize(query.trim()).split(/\s+/).filter(Boolean);
+      const invalidDates = Boolean(from && to && from > to);
+      byId('date-error').hidden = !invalidDates;
+      byId('to').setAttribute('aria-invalid', String(invalidDates));
+      byId('to').setAttribute('aria-describedby', invalidDates ? 'date-error' : '');
+
+      results = invalidDates ? [] : articles.filter(article =>
+        (!category || article.category === category) &&
+        (!source || article.source === source) &&
+        (!from || (article.day && article.day >= from)) &&
+        (!to || (article.day && article.day <= to)) &&
+        terms.every(term => article.search.includes(term))
+      );
+
+      sections.forEach(button => {
+        const active = button.dataset.category === category;
+        if (active) button.setAttribute('aria-current', 'true');
+        else button.removeAttribute('aria-current');
+      });
+      byId('scope').textContent = category || 'Vista general';
+      byId('clear').disabled = controls.every(control => !control.value);
+      byId('export').disabled = results.length === 0;
+
+      const counts = new Map();
+      for (const article of results) counts.set(article.category, (counts.get(article.category) || 0) + 1);
+      byId('total').textContent = report ? numbers.format(articles.length) : '—';
+      byId('new').textContent = Number.isFinite(report?.new_articles) ? numbers.format(report.new_articles) : '—';
+      byId('sources').textContent = Number.isFinite(report?.sources_ok) && Number.isFinite(report?.sources_total)
+        ? numbers.format(report.sources_ok) + ' / ' + numbers.format(report.sources_total) : '—';
+      byId('topics').textContent = report ? numbers.format(counts.size) : '—';
+      renderChart(counts);
+      renderStories();
+    }
+
+    function renderChart(counts) {
+      const chart = byId('chart');
+      const sorted = [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'es-MX'));
+      chart.replaceChildren(...sorted.map(([category, count]) => {
+        const share = count / results.length;
+        const item = make('li');
+        const label = make('div', undefined, 'bar-label');
+        label.append(make('span', category), make('span', numbers.format(count) + ' · ' + percentages.format(share), 'bar-value'));
+        const track = make('div', undefined, 'track');
+        track.setAttribute('aria-hidden', 'true');
+        const fill = make('span', undefined, 'fill');
+        fill.style.width = (share * 100) + '%';
+        track.append(fill);
+        item.append(label, track);
+        return item;
+      }));
+      const placeholder = byId('chart-empty');
+      placeholder.hidden = sorted.length > 0;
+      placeholder.textContent = loading ? 'Cargando distribución…' : 'Sin titulares para calcular la distribución.';
+    }
+
+    function articleCard(article) {
+      const card = make('article', undefined, 'story');
+      const heading = make('h3', article.title);
+      const meta = make('div', undefined, 'story-meta');
+      meta.append(make('span', article.category, 'tag'), make('span', article.source));
+      if (article.published) {
+        const time = make('time', dateTime.format(article.published) + ' · CDMX');
+        time.dateTime = article.published.toISOString();
+        meta.append(time);
+      } else {
+        meta.append(make('span', 'Fecha de publicación no disponible'));
+      }
+      card.append(meta, heading);
+      if (article.url) {
+        const link = make('a', 'Leer en la fuente ↗');
+        link.href = article.url;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.setAttribute('aria-label', 'Leer en la fuente: ' + article.title + ' (abre otra pestaña)');
+        card.append(link);
+      } else {
+        card.append(make('span', 'Enlace original no disponible', 'count'));
+      }
+      return card;
+    }
+
+    function renderStories() {
+      const shown = results.slice(0, visible);
+      byId('stories').replaceChildren(...shown.map(articleCard));
+      byId('result-count').textContent = report
+        ? numbers.format(shown.length) + ' de ' + numbers.format(results.length) + ' resultados'
+        : '';
+      byId('more').hidden = shown.length >= results.length;
+      byId('empty').hidden = results.length > 0;
+      byId('workflow').hidden = !report || articles.length !== 0;
+
+      let title = 'Sin resultados para estos filtros';
+      let message = 'Cambia los criterios de búsqueda o usa Limpiar filtros.';
+      if (!report && loading) {
+        title = 'Cargando titulares…';
+        message = '';
+      } else if (!report) {
+        title = 'Titulares no disponibles';
+        message = 'Consulta el aviso de lectura y vuelve a intentarlo con Refresh.';
+      } else if (articles.length === 0) {
+        title = 'Aún no se han recopilado noticias';
+        message = 'El archivo publicado todavía no contiene titulares.';
+      }
+      byId('empty-title').textContent = title;
+      byId('empty-text').textContent = message;
+      byId('empty-text').hidden = !message;
+    }
+
+    function csvCell(value) {
+      let text = String(value ?? '');
+      if (/^[\s\uFEFF]*[=+\-@]|^[\r\n\t]/.test(text)) text = "'" + text;
+      return '"' + text.replace(/"/g, '""') + '"';
+    }
+
+    byId('export').addEventListener('click', () => {
+      if (!results.length) return;
+      const rows = [['id', 'titulo', 'fuente', 'categoria', 'publicado_en', 'recopilado_en', 'url']];
+      for (const article of results) {
+        rows.push([
+          article.id, article.title, article.source, article.category,
+          article.published?.toISOString(), article.collected?.toISOString(), article.url
+        ]);
+      }
+      const csv = '\uFEFF' + rows.map(row => row.map(csvCell).join(',')).join('\r\n') + '\r\n';
+      const url = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }));
+      const link = make('a');
+      link.href = url;
+      link.download = 'noticias-' + dateKey(new Date()) + '.csv';
+      document.body.append(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    });
+
+    function filtersChanged() {
+      visible = pageSize;
+      updateResults();
+    }
+
+    controls.forEach(control => control.addEventListener(
+      control.type === 'search' ? 'input' : 'change', filtersChanged
+    ));
+    sections.forEach(button => button.addEventListener('click', () => {
+      byId('category').value = button.dataset.category;
+      filtersChanged();
+    }));
+    byId('clear').addEventListener('click', () => {
+      controls.forEach(control => { control.value = ''; });
+      filtersChanged();
+      byId('query').focus();
+    });
+    byId('more').addEventListener('click', () => {
+      const next = visible;
+      visible += pageSize;
+      renderStories();
+      const nextCard = byId('stories').children[next];
+      if (nextCard) {
+        nextCard.tabIndex = -1;
+        nextCard.focus();
+      }
+    });
+    byId('refresh').addEventListener('click', refresh);
+
+    function setTheme(theme) {
+      document.documentElement.dataset.theme = theme;
+      byId('theme').textContent = theme === 'dark' ? 'Tema claro' : 'Tema oscuro';
+    }
+
+    let preferredTheme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    try {
+      const saved = localStorage.getItem('dashboard-noticias-theme');
+      if (saved === 'dark' || saved === 'light') preferredTheme = saved;
+    } catch {
+      // El tema sigue disponible durante la sesión si el navegador bloquea el almacenamiento.
+    }
+    setTheme(preferredTheme);
+    byId('theme').addEventListener('click', () => {
+      const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      setTheme(theme);
+      try {
+        localStorage.setItem('dashboard-noticias-theme', theme);
+      } catch {
+        // El cambio de tema ya está aplicado a la página.
+      }
+    });
+
+    setOptions('category', standardCategories, 'Todas las categorías');
+    byId('clear').disabled = true;
+    refresh();
+  </script>
+</body>
+</html>
