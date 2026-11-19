@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-19T03:04:15.586655Z",
+  "generated_at": "2026-11-19T03:05:12.520753Z",
   "status": "ok",
   "sources_ok": 13,
   "sources_total": 13,
-  "new_articles": 382,
+  "new_articles": 104,
   "errors": [],
   "articles": [
     {
@@ -104,6 +104,15 @@
       "category": "Mercados",
       "published_at": "2026-11-19T02:07:29Z",
       "collected_at": "2026-11-19T03:04:15.586655Z"
+    },
+    {
+      "id": "b245c060e74bde0f2b700dd8",
+      "title": "Peso se acerca a las 19 unidades por dólar; tipo de cambio al cierre HOY miércoles 18 de noviembre - El Mañana de Nuevo Laredo",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOXzFHTmFMX2Mzb1pFT2ZsRTNEdFdQVDV6eENYVC1XSjFBSGZIOHFGSU1JUHFvUXh0a2FPQzBOS1UtR0JlR2lQTUtJTnFkSE9aR2ZDNktnTTFIVlpuYjhPZDkyWnRfdWFQZW9sM3BGYW90WTdLODNvN2hESmhrVTJSMWo0R1BYU05IREJ6aHU3a2NGYVowdTdxTlRVOC1HQUR0U0I5Y25yaFQ2RlFrN1VfRnhQa3Y4TjJMM0tHWjdZVVJ3dw?oc=5",
+      "source": "El Mañana de Nuevo Laredo",
+      "category": "México",
+      "published_at": "2026-11-19T02:03:13Z",
+      "collected_at": "2026-11-19T03:05:12.520753Z"
     },
     {
       "id": "2f838e39334e28395ebbac70",
@@ -457,6 +466,15 @@
       "collected_at": "2026-11-19T03:04:15.586655Z"
     },
     {
+      "id": "e617375dcd30f067e7f507e2",
+      "title": "México paga 27 mdd para mantener línea de crédito con el FMI - Buzos de la noticia",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQTHFKZ1FGaWN6ZmZoUml1OW0zczBhSHgyUWdLVVNPN2xPdmRySnNXOG9VWmtyU0NwV1Jud3hlU3p2UTZtTVVjcjJzRkpaQkN3cXRDVENCRHF4YXVlS2ZMeS1xeDFiTDFWeF9VNDVBcXl4eE9xMFE2aUh1Z2lOZzVHT0s0NGU0Wk45dURyaHlNa29DbW8?oc=5",
+      "source": "Buzos de la noticia",
+      "category": "México",
+      "published_at": "2026-11-18T22:50:03Z",
+      "collected_at": "2026-11-19T03:05:12.520753Z"
+    },
+    {
       "id": "f56ca4905d6b91d1a67512cf",
       "title": "Fed minutes: Higher interest rates needed in December as inflation worries mount - AP News",
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOd2Q1ZnpsMjBsaWNUMEJIVUxmTTNSeUYyOWphQWtydFJKbDIzN3JiUXpvcEQ0dnhBcFVhRHdGWTR4dTRCQW5FNi1BVE8ycGtnTXEtWkZJMS1COGc5M25oUmNWb1hMemNpZ0p3MlRGSjBRLU1rX2cwRUlrbjNCWEcxazRkazhVd2dTUUFuWU1KN1RiVHBURHc?oc=5",
@@ -610,6 +628,15 @@
       "collected_at": "2026-11-19T03:04:15.586655Z"
     },
     {
+      "id": "050f6e2f67d446f97b9135e8",
+      "title": "México reduce su línea de crédito con el FMI y paga 27 millones de dólares por mantenerla - Serpientes y Escaleras",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQeUwyZ05tM2FGQm03UnVKTkd4WXRaaFFMaHd4U3BFaEgzTTNMR2gycUFraTJPYzR4am5OeThFdGdBdjNHN2pwVDJEcGpYcGxpNDNJVmx6c0l1Q1g4N19oSTZoMW1tYkdxbzB0RWVEd1BvZXpnaTF2TVVDdDdzRnhfSDI2Y2ZWenFHU0tSZmwwSXhsd3Q3M09hbEo5X2pEdC1XN0ZHVTZGa3k0MVdPdm9nVEs2aElzLWhnUDRFd3BOMA?oc=5",
+      "source": "Serpientes y Escaleras",
+      "category": "México",
+      "published_at": "2026-11-18T21:29:52Z",
+      "collected_at": "2026-11-19T03:05:12.520753Z"
+    },
+    {
       "id": "3e7d87bcd6ce3da684f2792b",
       "title": "Peso mexicano pierde más de 2% ante el fortalecimiento del dólar - El Economista",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTVloTl9oa2NvT0VfLXpMMnBRaHphMktEZXBOOUFteUZIMEJId1pvTzhuc1FMREJwTDlVUzd0SGd5Y3Bzcm9pRGxSSnBFVElQeExaWkdEekN3U3A5aVRCbzVSVE9rRDhQYkluVXRtM2hmQ29oZFowT2lJbThwcmdOSXk1LXFaSU9udXdVX0ptS09qOTBMd3VLNGgyZ3FhYnlmNnJBNHFreExMSmhTVVHSAbMBQVVfeXFMUF9EQVlsVXFpZ3ltVDNlNHV5QlNodHh0NjFWYTA4UGhLOWVYM1RGSGhiZk96Tld6WkN6dk84eXVkTlJTbDhodmNwSkVyQmhPUkJrSGJNSDhwQXNuZ0l2dTBxaTZZWVJQS2VXZlU0M2RxdTlMLUp0a1h5UG5tZWFrbmxCeGo2Y29PNFgycmlma3Q1RndIQmVIVUwxc0NMdkF1WUxXZ1BvRmdMVlhIQWNtTG52Vmc?oc=5",
@@ -637,6 +664,15 @@
       "collected_at": "2026-11-19T03:04:15.586655Z"
     },
     {
+      "id": "34e7a73c308bde702b0ed984",
+      "title": "Peso mexicano arranca hoy con fuerte depreciación ante fortalecimiento del dólar - Chihuahuaexpres",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOXzFOdnBxRGtJNWtDUjJNR1ZVU3VIVUo1dWt4QVlDUVlxZkRaU2dRT3NZRE9IaUlpc0VKWXY5ekxKSGhfaURSNXBKVU01NkoxX1ZmNnRYZG5TWkpfLUxjN2pQMFlfb25fcXVFeDNGQkMweWs0SmUxNHczdVpIbDByRUY2X2VRcXdNN2pSdmZqTWluWjJWUFI5bmZ5YUk3LV93bXg5enExdw?oc=5",
+      "source": "Chihuahuaexpres",
+      "category": "México",
+      "published_at": "2026-11-18T21:07:51Z",
+      "collected_at": "2026-11-19T03:05:12.520753Z"
+    },
+    {
       "id": "731bc48fd52386122a877f65",
       "title": "Fed Minutes Show Broad Support for More Hikes as AI Debt Enters Stability Debate - BigGo Finance",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE95SlBCTjVkSE40aUxDQ2ZfRksxOGxyaU51V3Y5X200dWhWNWFNUmdSdW83SkVfZTEtWVdlVkl0NkFzVl9aaVhDaGh4UmMxVHZYdDZISDgtRmRPb0JZQnZXaHlhcG05cXlDaG1mVi0zZXZvR2ViR0E?oc=5",
@@ -655,6 +691,15 @@
       "collected_at": "2026-11-19T03:04:15.586655Z"
     },
     {
+      "id": "e474e202865d13b653f36945",
+      "title": "ONG propone subir un 9,5 % el salario mínimo en México para 2027 y llegar a 18,61 dólares - Yahoo",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5NTHBGajZGa09QUlhkVGxreVpiWHdaS01qbWUxWVJwa3c1MjFwVG9GWUZCVHV2cGlpWWpHS1p5Tm9xcThzNE9FY2owMmlUd1pBN0hySUxVWndRSHc5QTR2dEdFbmtSZVVpTmhKRF91OHpERVA4YmRsVA?oc=5",
+      "source": "Yahoo",
+      "category": "México",
+      "published_at": "2026-11-18T20:25:37Z",
+      "collected_at": "2026-11-19T03:05:12.520753Z"
+    },
+    {
       "id": "755a5fa7531eeef44afbb1aa",
       "title": "Periódico especializado en economía, finanzas y negocios - El Economista",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSng5SXdPTzRuYTgwTzRnRzQwdERrb2Z4MWdFM0RhMmRPd2dmNXUwLUZLRFI5QWxLOE1FRzRBWGp1ZFZQWUtjR0t6VDJkdmpHZ3B4b2doTk1GRGZHdzkwdFZiYWQwdkpmMWJMUlFyMmN3SlVnaDRyTU80MFJrT0xtMA?oc=5",
@@ -671,6 +716,15 @@
       "category": "Mercados",
       "published_at": "2026-11-18T20:16:28Z",
       "collected_at": "2026-11-19T03:04:15.586655Z"
+    },
+    {
+      "id": "7e5da48aa7357ed3d4e2ba94",
+      "title": "Baja de tasas de interés en México: ¿cómo afecta a quienes ahorran, invierten o tienen deudas? - Imagen Zacatecas",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOMG12U1JZQUhHSnllWTFyU0VKRXhaU0hmdk9fMXVyTFFfMmNLMjFIYjNaQzMtaXRicGxZdGh4ZllkcjV5eTFMQlJGSTd5SnVwRnA1eC1UOGtETkdaZHRBR1pPUkl2QnlNNDhXZEtNOHQySDJEYU9ORk1uRW9hdnFVSjFmZ01seUQ5RF8xRFZ1LXNDb3VjdHJpdnFKWjJfdll3NkxidlA1UXlqSjQ2SWcxUnZVbnZvSkJiUlBMSTlBNWQxZw?oc=5",
+      "source": "Imagen Zacatecas",
+      "category": "México",
+      "published_at": "2026-11-18T20:15:38Z",
+      "collected_at": "2026-11-19T03:05:12.520753Z"
     },
     {
       "id": "1a02deb7f7681578a6ba87ed",
@@ -779,6 +833,15 @@
       "category": "México",
       "published_at": "2026-11-18T19:33:03Z",
       "collected_at": "2026-11-19T03:04:15.586655Z"
+    },
+    {
+      "id": "441fdb6c9d4f946a448365fe",
+      "title": "Fed Governor Barr Signals Need for Further Rate Hikes to Curb Inflation; 0.25% Move Eyed for December Meeting - BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9uQWhyaDVzTXFpUG5UZXJjZ0NiXzJwY2Z5UkQzOXVHQ2I5cnVlZ0NTZzhuWWNDaW9acjlzejMwYTBhbkVRX0RMMVhiX2poeWxybmZDb0k1WHpkbl9zSmM0SDc1WjhIcklYaFRXTDF6RU5ZdUVGWHc?oc=5",
+      "source": "BigGo Finance",
+      "category": "Estados Unidos",
+      "published_at": "2026-11-18T19:25:00Z",
+      "collected_at": "2026-11-19T03:05:12.520753Z"
     },
     {
       "id": "8d7597f1e0240a08c8b79fad",
@@ -952,6 +1015,15 @@
       "collected_at": "2026-11-19T03:04:15.586655Z"
     },
     {
+      "id": "ac6910050e161571ec3e6db5",
+      "title": "México paga 27 millones de dólares al FMI por comisión anual de crédito flexible - Fortuna y Poder",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPX1NIckprTHJ3QlFCN0xNRHQ0M21NMWVmQVFyWGczQ3drVGZhTE03WUhDZ19IcVMtRnJGWG9ZbWlsYnFGMl9rTS0zMDdub3l2M1NneThPVC1FUjFPVUc3OFZoZnhXVXpySzMyaTNsZGRtVDJSc3M1NGdkOHE0S2RjZHFDR09TNlBIZnIwMFBPcmpFRjJYcFg1WUZTczVpRnFHRW1QeDVNdXk3cTJEXzRTWEJCTTJ2Zw?oc=5",
+      "source": "Fortuna y Poder",
+      "category": "México",
+      "published_at": "2026-11-18T18:01:17Z",
+      "collected_at": "2026-11-19T03:05:12.520753Z"
+    },
+    {
       "id": "aa851ca3aecbf16801737734",
       "title": "¿Resico 2027 impulsa a las empresas o aplaza la reforma fiscal? - México Evalúa",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNYTk1al9PYUxoTFJVYmMzN1pWekM3cUo4VXltQkZXMzZaVDR3ekZPVEt6M2hTLXNWb2xqdF9sV3pfbFJtbXE5WjNsVDA1Y3RBOTJJWTFxY1p1Tm5fZGdid294UktVNE1FUmRpdlpKRy1MdVcwbUZESHZoQVo1UFN4VDhUa2Z1T3JCR0RBQUc4d18?oc=5",
@@ -977,6 +1049,15 @@
       "category": "México",
       "published_at": "2026-11-18T17:50:18Z",
       "collected_at": "2026-11-19T03:04:15.586655Z"
+    },
+    {
+      "id": "c73d73b757b04e0c2ec530fd",
+      "title": "UBS ve menos respaldo para el peso mexicano y eleva su apuesta por el dólar - El Cronista",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNNkJEVF9xcXJUOWJZV09NWDNKeDBTOG1hWHBfdmRBaHAxcEdsUHJOcDFJT3BPSDFHaXJDNFRqdm90Tm1qRzZZY19CM05mdVg1ekpvYnNNRkF4RmlXQ09IeG1Pc1ZPeER5R2NjcENIaWhNN3M5SXU5TXJlbEdpdkZtMExJWlQzZ2E1ZXEtRGZhc0psV1JEU0ZYMC1WcThfQk4yY1dsa1YyUzU1Z1M0V0xUSDhwRXhQa2JCaVVheEVGTm8tQ3VKYmU3UEhONTlwRXJPRWpZ0gHuAUFVX3lxTFBmRXdKbDU2dUpoWDZ3YWRueU04RzV5SDV1NGhoTzg3Mkc0MXlEcGhHRkVDZEF3Y1lkMUc1dnY4N2t2VWc4WFg3d1pJLTUyR2hleG8xdDZCeVN4MTFzT1RJelZJRkpiUGFWT2RRLTVfM3d6blE5Tm8wdWVKcEFRYlFMd0JXSGdpMXYxTWtFcGZSTnJlN2wxbjNFSzQxaXlLeVRtYzZseGQxRmRGWnNzZGhyRS1RcjJRQmZ5Umw0NDhZYjkzZFJGTnozYTZTektXcmt0TUtIUG1rWDNyQ3VsQjUwdHdRajB4RUo4eUFkNnc?oc=5",
+      "source": "El Cronista",
+      "category": "México",
+      "published_at": "2026-11-18T17:50:18Z",
+      "collected_at": "2026-11-19T03:05:12.520753Z"
     },
     {
       "id": "acc112a5b11232376dceb0de",
@@ -1031,6 +1112,15 @@
       "category": "México",
       "published_at": "2026-11-18T16:55:00Z",
       "collected_at": "2026-11-19T03:04:15.586655Z"
+    },
+    {
+      "id": "c8f5bb101cc1533a703b3a91",
+      "title": "México paga al FMI comisión de 27 mdd por línea de crédito, reporta Banxico; el país pidió reducirla a 18 mil mdd - El Universal",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNQWFOeTJjUTVvdmJKM3dBckRtLXItYmxBcWJ3Sk11akFieEpuX3NrY0dXLWl6RXpSRzFKaG8wTVJQMkw3Q2hZbHdVSE5pUHNNLTdiSG1oWlNrbzZWRXFtNTVIRGF0RzJLeUhxb25fUGtMMTljUTE1Y2ZMR0Y0VjBzZE5YOGdZS2pNQmxTcU13b0tEdlFiOFVXcnlZVU5MS292MmpycmFoa0kwNXVrNFEycElzRm4wMmNYeHgwcV9Wd0E5SG96U3RhUVI5UkllX044ZmlzSHgwNU1WLUFOZm9yNmNBak5OTWpOaFlMTWVfZU9FcUs4WTNobUhB0gH6AUFVX3lxTE1BYU55MmNRNW92Ykozd0FyRG0tci1ibEFxYndKTXVqQWJ4Sm5fc2tjR1ctaXpFelJHMUpobzBNUlAyTDdDaFlsd1VITmlQc00tN2JIbWhaU2tvNlZFcW01NUhEYXRHMkt5SHFvbl9Qa0wxOWNRMTVjZkxHRjRWMHNkTlg4Z1lLak1CbFNxTXdvS0R2UWI4VVdyeVlVTkxLb3YyanJyYWhrSTA1dWs0UTJwSXNGbjAyY1h4eDBxX1Z3QTlIb3pTdGFRUjlSSWVfTjhmaXNIeDA1TVYtQU5mb3I2Y0FqTk5Nak5oWUxNZV9lT0VxSzhZM2htSEE?oc=5",
+      "source": "El Universal",
+      "category": "México",
+      "published_at": "2026-11-18T16:46:26Z",
+      "collected_at": "2026-11-19T03:05:12.520753Z"
     },
     {
       "id": "ff977f7bc3301721e93595dd",
@@ -1969,6 +2059,24 @@
       "collected_at": "2026-11-19T03:04:15.586655Z"
     },
     {
+      "id": "4d631656fe9b6d56818dc0dc",
+      "title": "Más de 500 empresas de Gas LP piden actualizar precios ante pérdidas operativas en México - Noticias de Bariloche",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQT3J4c09zSENEeU1FY3V1bzRHUFBtOGM1VjJEVndpT3ZkNDJWSldWanZyd3phTDB6WnRNbVBFRm1WTGFDN0F0MFFXdFNUaXhaV2YtNHg0MXZQWDg3eElZUjFLTjkxSVo0aVBVZExTamZvYXhkTnZoV1dUdE95aEZDcW83bjRrTU9IYTNmNWd4SEgtbHJrQy0yM2F2ekhqd3pDMFRXemxZc01IM09BcHRPcWhTcUpua1hhaTJBcjFQdS15eWNlNjNmMGlvUDU1d9IBzgFBVV95cUxQT3J4c09zSENEeU1FY3V1bzRHUFBtOGM1VjJEVndpT3ZkNDJWSldWanZyd3phTDB6WnRNbVBFRm1WTGFDN0F0MFFXdFNUaXhaV2YtNHg0MXZQWDg3eElZUjFLTjkxSVo0aVBVZExTamZvYXhkTnZoV1dUdE95aEZDcW83bjRrTU9IYTNmNWd4SEgtbHJrQy0yM2F2ekhqd3pDMFRXemxZc01IM09BcHRPcWhTcUpua1hhaTJBcjFQdS15eWNlNjNmMGlvUDU1dw?oc=5",
+      "source": "Noticias de Bariloche",
+      "category": "México",
+      "published_at": "2026-11-18T00:57:31Z",
+      "collected_at": "2026-11-19T03:05:12.520753Z"
+    },
+    {
+      "id": "47398a137d503db3f24df91f",
+      "title": "Peso comienza a recuperarse del alza del dólar; tipo de cambio al cierre HOY martes 17 de noviembre - El Mañana de Nuevo Laredo",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZFJnVWpqaUhTZy1qSW1BVWVDWjZWQ3pHLXdueVA1NWNudHQ1Rkt2UkZOSWxIOVgtSUtvakVqLTJCWWROT0NpYURIdmJVVGxNRUFGbDRPTlRCOVVJMkxlaVlua0pDaTAyV2ZHRUxRanRFTWRVUHA5NWRWcnZNUjlJRnZURUM4a09Jbi13ZGVON0hZbnRQMmVpQmlyZFYwVVNiaWFpRExpNWpCYmw3QldmdXN5N2JQSjdZ?oc=5",
+      "source": "El Mañana de Nuevo Laredo",
+      "category": "México",
+      "published_at": "2026-11-18T00:32:57Z",
+      "collected_at": "2026-11-19T03:05:12.520753Z"
+    },
+    {
       "id": "59dff70696d5cdab9804bfa6",
       "title": "Japan exports set record in October on strong chip-related demand - Reuters",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZlhvQnNySnJ2WXBNLXQxVHlpN181RVZpRk1JamR3N2pCNmpoRDBTeTFHUjlvSjhVV05WMm1KMVk4c3B0LUxhUkdKeE9tczI3dzF6QmtGNmtXTGhYNVktZjh2cEtQb09uR1VQdzktMXlkanNtTVFRdGd5MzFBdVNzR3FaVUsxbTI3UVpRemFPd2VDdFZsNl96Z1p4Ym5mUHl1RHhNUFJ3Mlh2STFs?oc=5",
@@ -2048,6 +2156,15 @@
       "category": "Política",
       "published_at": "2026-11-17T21:32:48Z",
       "collected_at": "2026-11-19T03:04:15.586655Z"
+    },
+    {
+      "id": "67c4c267155883fb8c4a2fab",
+      "title": "Subgobernadora del Banco de México no baja la guardia y observa “riesgos al alza” en torno a la inflación en México - Infobae",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQNEFsYzFXUHo3S0xaVkczakxXMWlMUHp3cTM3MUxSRW02LVU2YmRsNGpaUzRxWXZaTUk1QzdfMFQwd29BVE15V1R1NkhRSkRsYXlOTGtMX2pQZV84RlVfbWFmVk4yUE9uNmk2MkJHVzduSDB4X3BwUV9TMm5nSkRBWFZJOXFRRENYVmVGVThscUxfNmczTk9SUlhRd2pvaVJYRktSV09UV2hmVWpsd1NnTFZZYklmQlcwOE5mR0hwVUhDcUZEdWFtdldoblA5Sk9sWTgwd2FVUWVPS0E3V1FmcVdyakpFaU15WjRDUtIBhwJBVV95cUxPMDlMRGtPTkJKWkRxa2REaV9yeTExNW4zWUdtODlZbkNxLWF1ZE5ueFFJZjMyRm14dERoUlkxSExkUUhRNWRjOG1pR3dvSlFvT21qTkJGcElILXVLY3hIcTJCdmZadEtUTGMxd1BpaVUxclAzMWRUSGxFenUyMUo0Nl9tYm5jNzVnTEQwbjg4NFNQellRa1dsSDUwbXlTcUhXdnlkX2ZCN3RmSE4yZ2J3Q252MC04eEV4R3lxTDBydmtkUk5SS0lFdzkwLXp0QWtTWDQ1QVBjRDFJbTVWcU9kUzNLZmctWFdwTmE0R2c0VzlCdDQ0cVplYUNiVmE2Q0dadEZMMzI2NA?oc=5",
+      "source": "Infobae",
+      "category": "México",
+      "published_at": "2026-11-17T21:22:00Z",
+      "collected_at": "2026-11-19T03:05:12.520753Z"
     },
     {
       "id": "70ff7051c9a2a068406e97ea",
@@ -2311,6 +2428,15 @@
       "collected_at": "2026-11-19T03:04:15.586655Z"
     },
     {
+      "id": "f7235720ccc49b35b9f77e5a",
+      "title": "Peso mexicano abre en 18.50 por dólar este martes 17 de noviembre: resiste presión de la Fed y Banxico - Mi bolsillo",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPemt1ajRGeGQ0dk96SDZqb05lc0xTRDVOLUxSUFRuM0wxR0drRFhGeTFKWU84M0lpMExDNHczcm1OaHVocElockl5VGwwbVJ0NU9lOUEzMlRKWDBlUEpZalNxM0JmRjFSenVvWE8xM09kYmhxWlRfdS1jQlhMOXR2QWt2TkhlWGVoMm5kQzRLV2lkYWhKLXJFbk9ab2RNUVVPUGlOaDEwWXNaWnRNUURrZFp1R2duRkNRbmZ0SUd2YWhwYkRVblFiQTFhX1hvb2V1M0JvWlEySmcwejdVaTBwZmFQM3ZGWFk1aFNVZw?oc=5",
+      "source": "Mi bolsillo",
+      "category": "México",
+      "published_at": "2026-11-17T17:30:00Z",
+      "collected_at": "2026-11-19T03:05:12.520753Z"
+    },
+    {
       "id": "69c6919ec4cf0bc9fe68d7e1",
       "title": "¡Evita multas de 11,500 pesos! Tienes hasta enero de 2027 para habilitar tu Buzón Tributario - El Economista",
       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxORDdGT3VVQTAtdERPNDdoMzN3d2VzMERwaUYzZ1ZPcU0yNHJiNnZwcjBNS1N0c3l0cVFYYmk0MEpicFM4NHRuOVBpUDRHaEVESmZKUWNwRTJvbWxOVmhOOEhYZXJ5UGFNZXlhaFlNUldyaTQ2VWVaZURpc0pzamNGZzBEcTluSjAwQnhJdzZ5ejhUYUxsdEFURTBVZlA2c2tZME9fOXI3RDVtMEV1TGpFcDZsUEs0Tld2OGZKTkRkNDVjOV84TWxGamQ0M0NvRk5SaVI0YWE3MF81UdIB3wFBVV95cUxOWnNWcmpuOU45U21OZi14ci1zbGtsMDVhbXJmVVYwOC1FQUgtQ3d1X1FWVUlYdDM2aFo4NlhjZml6VC0zeTBETFNGdVJSX2VSZE9ualQzQTUteWs2dTBLV0FmbVZfMzFubWIyYjlEUUI2WDVYNWFvWFVrNU9lR3gwdUV1dmdwcDVuX1J6aTBUcTFDZmFwdlR0Yi1sWlhDYzFkZDN2YTVsbVU0azZKUF9kSFB4NGNlcV9SRDNOYVp0eVBJY2VWaF8zcmdaOGZwelp6a3FRS2xPa2tJRllYa2x3?oc=5",
@@ -2318,6 +2444,15 @@
       "category": "Política",
       "published_at": "2026-11-17T17:00:00Z",
       "collected_at": "2026-11-19T03:04:15.586655Z"
+    },
+    {
+      "id": "35390b80118a00b005aebd69",
+      "title": "Peso empieza la semana con ganancias mientras espera información económica de la Fed y Banxico - Proceso",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQT3FieldJUmZCVEhYYVJLMWJuYl9BQ2hZTDhNZU9qcElobUlLMGxTS0VCa0ppMElWOTNGc2FFMUxfUUJ2cGRIVG10RVRObUVjOEo4Vk5PSjFSbHlsdkpYb1lVYkFyakhlcnZkcnV4ZE1Gd0Q4M094YTVxWDRCbTVFRjZ1bVRoOEJVTVNBZFU3NW04MUV0Q21TeXpzeEhBNWhabkgtRm1HemF6WjJHZFNwVWlLQm1RRUlRTU1wcEpSa0xpcnAxTVhhdFpZeWQ2YVJicVJvcVZJSmx6UGFQZzRFN0tJSG54dFFQ?oc=5",
+      "source": "Proceso",
+      "category": "México",
+      "published_at": "2026-11-17T16:50:17Z",
+      "collected_at": "2026-11-19T03:05:12.520753Z"
     },
     {
       "id": "072cd637400ee488d43e03ab",
@@ -2363,6 +2498,15 @@
       "category": "Mercados",
       "published_at": "2026-11-17T16:30:50Z",
       "collected_at": "2026-11-19T03:04:15.586655Z"
+    },
+    {
+      "id": "31c95549a7166aa69822f6da",
+      "title": "México reduce su respaldo financiero con el FMI: ¿por qué recortó su acceso a la línea de crédito? - IDC Online",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQMEhIRWt4Vkd3ekpDcW9RWUZQOXZ3VlBLYmVOZXFQWlpRRkZQVFpWbkpFRUVYbVpNUXhBSTZNRDJRdFpud3JaQ2dFa0ZzQUdzRHZtTU1Od2hKZ0JJZU9oVUZGOUNoalpqYzVIVFV2VDVDQ3M0UjRCVXo1YkN1c3BwV1c4bVpLTFhyOEZBMW1RYkhpVlVGbmRfazNtWUh6ZWJSc3QxWkN0NlM5OXl4YjFsckVRWjhxQjdiSWE2Y3ZWeXZXNHAtUFNDc1JzT2Y2NHpBZlE?oc=5",
+      "source": "IDC Online",
+      "category": "México",
+      "published_at": "2026-11-17T16:09:12Z",
+      "collected_at": "2026-11-19T03:05:12.520753Z"
     },
     {
       "id": "f2f68f0ebc7356e7ccdb2926",
@@ -2426,6 +2570,15 @@
       "category": "México",
       "published_at": "2026-11-17T15:05:22Z",
       "collected_at": "2026-11-19T03:04:15.586655Z"
+    },
+    {
+      "id": "9ac6babe5da59222b5af36c1",
+      "title": "Precio del dólar frente al peso mexicano hoy martes 17 de noviembre de 2026 - Imagen de Veracruz",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNcWVyZ2NmVWJxVFdjcmQ1ZHNsTEtzTHJXSlhCajlmTHJ4a3R4Y1RjdUlGalFhMnl0WDd6SEVSYi1VRWdaaktQaUpIcExuRVZ6UGVLQ19qWC1kSW84ODB3bnBmOW5qMkRHYjRMVmpRLXdQbnFpMnVjU3B4NVYxSFA5U2wybVlnTXM2SmRoaUtVMUxpRWFLZ3huQnZxRm1LeTZ3UVA1VzNtbGZvbkNFRTFQRTlFSTlQSG1SVzI0T0NSOHNjc2Q3Xy11TG9RUEFWbnBX0gHQAUFVX3lxTE1xZXJnY2ZVYnFUV2NyZDVkc2xMS3NMcldKWEJqOWZMcnhrdHhjVGN1SUZqUWEyeXRYN3pIRVJiLVVFZ1pqS1BpSkhwTG5FVnpQZUtDX2pYLWRJbzg4MHducGY5bmoyREdiNExWalEtd1BucWkydWNTcHg1VjFIUDlTbDJtWWdNczZKZGhpS1UxTGlFYUtneG5CdnFGbUt5NndRUDVXM21sZm9uQ0VFMVBFOUVJOVBIbVJXMjRPQ1I4c2NzZDdfLXVMb1FQQVZucFc?oc=5",
+      "source": "Imagen de Veracruz",
+      "category": "México",
+      "published_at": "2026-11-17T15:05:22Z",
+      "collected_at": "2026-11-19T03:05:12.520753Z"
     },
     {
       "id": "3d419bb5bb7e71516505ce96",
@@ -2536,174 +2689,21 @@
       "collected_at": "2026-11-19T03:04:15.586655Z"
     },
     {
+      "id": "2aecd2d0c8a4547d5fc4c7b2",
+      "title": "Fed’s Musalem Says Several Rate Hikes Likely Needed Before Spring 2027 - WSJ",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONlE5MkU2R0ZHZmVES3lZRXd0anBhR25DRkJOcTM5UU1INjc2VXVuMTFZSG9ONE9HTUdCTGpiVnE2bTdxNmQ5a0JuZWZwVlNFM3dKc0JiZ3U4OElZRWtkLTFOU20tMGZDNVRWMFk5YjdsTzlZdkxNRGV5dl9QWjF3YW5SMV9RdVJUUGNqcmpuSzhNT25wYllhWVcwSXIzYU5acEZkRmlMbUdiQl91NXpnbG95M2NiVmdCYjVuUlFJdw?oc=5",
+      "source": "WSJ",
+      "category": "Estados Unidos",
+      "published_at": "2026-11-17T13:14:00Z",
+      "collected_at": "2026-11-19T03:05:12.520753Z"
+    },
+    {
       "id": "dfbd459354503ad2dc61ce41",
       "title": "German investor morale rises more than expected in November, ZEW finds - Reuters",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOVHlKcUF5YkJhTnUyWlpxTEpzUDNxQ3FVMGZlUFNtcE5yX0diRkQzSlN0MlZiZjhkWmFYTzg0UktZOElMQjhnOURndEtiYTN6TGJRQ25zdDJUWXA4dTJNTzRyQl9YTUcweGVEX0Uxa1NvX1NFZExiUExpRWxaNGRiWE5yc0hSS2luaThDd2VWY0RCZ0xlMFR6RlVnYW9DQ0p5UXRFX1FtcUx6ckVaZ25reWY5Ulg2UQ?oc=5",
       "source": "Reuters",
       "category": "Mercados",
       "published_at": "2026-11-17T13:13:38Z",
-      "collected_at": "2026-11-19T03:04:15.586655Z"
-    },
-    {
-      "id": "75502278380d3d73c62a783c",
-      "title": "Campo Trión avanza con inversión de 10,434 millones de dólares en Tamaulipas - El Economista",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYU9ZUHhmX1dmZGNPYVdGQ0VnLUQtMXV5d2VBTE9EdlJ0R1BTRHNVT2RtR3NLR3l2ZVYzWUFuZVNsMTBXdzVnTktoUC1sUVd2b09wd0Y2cTdQLW9La3Q2blBXWEcxVER6TnMxMlR1UW1QUTA1MmI2LVFjeDBZdFhlLXVUV1NNSUhfWlJGZFkyVDNLZXIzNlc4ZmswUGphNXRzY0hWYjNxWDZPNHFVUENUS3JIMzJqcFBucjF4R0MwTzAzd9IBxwFBVV95cUxNMGRKN3MwVlJ2LW56WGxOVFhYbGZIUG84b0xPbUpEUmtGbnVlaDhXNFN2Tk85VHdtVm1xSE9yelRXOTlrN0ZOQklNRFg5QnkyS2xJWFVnODJwRGUzNlpWQVp3WURQeGRlcFBJSENJTHFuVUpUd3dtNC1QdmFPUXFOZHVXQ1k1Z3MwdnVMdndPa192LTN0OU5fU1VHN0JOOFRjUlYzYzJING85X1R1N2JzQ3dtcndHSXc4TUEydDJ6bThlMjhGMUpJ?oc=5",
-      "source": "El Economista",
-      "category": "México",
-      "published_at": "2026-11-17T13:05:00Z",
-      "collected_at": "2026-11-19T03:04:15.586655Z"
-    },
-    {
-      "id": "7af243aaa7e0f10bc08b1077",
-      "title": "Ukraine damages Putin’s prized Crimea bridge as Zelenskyy lauds ‘unprecedented operation’",
-      "url": "https://www.cnbc.com/2026/11/17/kerch-bridge-ukraine-russia-putin-kyiv.html",
-      "source": "CNBC / Politics",
-      "category": "Política",
-      "published_at": "2026-11-17T12:48:14Z",
-      "collected_at": "2026-11-19T03:04:15.586655Z"
-    },
-    {
-      "id": "bf592496fd51d0dd5d965760",
-      "title": "Acciones de Deutsche Bank caen más de 6% tras noticias sobre pagos a Epstein y negocios con Rusia - El Economista",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNY2I2TFNsbWVIQmNkdWR2MjB4SW1FaFlJcVA0bXI5a2VHTTFsdWVBdk1JMWFlNklFOU1tME9KR0ktNFJFX1E5RlZZazdHdFFNdTBtU0ZqSTZfdkhmSUdZSzh5dmFqOEl6Z3JreTNQWUl4RlR3aEpSeFV4S19ZYTRHTVRRcnlFTV9WV0ZMQUJYS01sdFQ1QkpydVZsdmlKS05tTVRsTWppYTNTeERUc3NEaFc2aE1Ddnk2X0lXb1N5RDJrejlzVk1BMF9PekFTbTBY0gHWAUFVX3lxTE9SN09qN0ViQllZZ2h3R2NzNzZyX3lUNXItdEVJUW5EMDBGdEJDM01WTk41elBveVNIYXJPYXR0TUZjMjVEaEo1MGlhbF9IVzN5aFZTWTdwSldUa0lXdTkyM1VrRWgzdG91MTJxZ2pqYUROSGxFVldmYjhtejA2bU9BRDRwTlFzLWpJSy1QeDVTbWFCdHA4MTIzU0t1azg5ZW1oNlVPazlNSTZKSnl0OW5LbnNMRUlPUFVtckNvYm53U0xjemxtaHZ4ekZGenFiUDUtMkFQUHc?oc=5",
-      "source": "El Economista",
-      "category": "México",
-      "published_at": "2026-11-17T12:13:10Z",
-      "collected_at": "2026-11-19T03:04:15.586655Z"
-    },
-    {
-      "id": "90914cbf5735411006ca1445",
-      "title": "Sterling edges up against dollar, breaking five-day slump - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRGwtNHNoRlNEbTh3eGVDWHJJWHhEUzlXajUwN3pPUW9Hd3hydzc5VWVlTjV2eXBHaEE0aFprNGxxOF9DUUtTNWtwaVdMOEdxM3dQbXdmd1Z5TVZCTTQwVnBXX0JiTXZwc1hmSGloLUJta08xS1ZER1pVOWV3akFCR09tdE9kb1RZLTNkdWFnNkNETmg2bTN2SFpUbVRpdTduTnRV?oc=5",
-      "source": "Reuters",
-      "category": "Mercados",
-      "published_at": "2026-11-17T11:49:58Z",
-      "collected_at": "2026-11-19T03:04:15.586655Z"
-    },
-    {
-      "id": "a9acffc654114bd527559548",
-      "title": "COMMENTARY: Morning Bid: Chip wreck - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQQmNFTVpRdjJEQ0FMbGZEWkZybUZQSHY1cG91MVZlZU0xY1RtRzFNLTc0U3Nnc3VhcXFnTHRGejY1Y3hrekczYTZXNkEzLVJWenhLbjIzUm81UWQwOXZ3NzlEYlBKeDFfNzVHRG5SSWhyMHBhd1RtMnZCeUtnLUZEOFN4UGVpQzdXN3ppNldnY01CaXFsbm40?oc=5",
-      "source": "Reuters",
-      "category": "Mercados",
-      "published_at": "2026-11-17T11:40:04Z",
-      "collected_at": "2026-11-19T03:04:15.586655Z"
-    },
-    {
-      "id": "0bb5bf1cd03f4e4f7662c9b2",
-      "title": "Investors slashed tech exposure allocations by most since 2006 - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9hUzk5NzA2a0JXelk4ZWhJcFpPT3Q2NWxVa3Bmdl9lUUhTaDZVQ0pFRTZ2WTRkVFRGQWNzenhrN2FaWkJzM0NBMTZEU3dLMHJTRHBWd21XSnhmcXQ2cmRHSWpBOUxwV2F0c2dGZENCZTBmekpuRXRzVkJxcw?oc=5",
-      "source": "Reuters",
-      "category": "Mercados",
-      "published_at": "2026-11-17T11:35:04Z",
-      "collected_at": "2026-11-19T03:04:15.586655Z"
-    },
-    {
-      "id": "dbd80f052d6bcb1e32724666",
-      "title": "Iran escalates threats as third U.S. carrier arrives in Middle East, tanker struck in Hormuz",
-      "url": "https://www.cnbc.com/2026/11/17/iran-war-trump-hormuz-oil-.html",
-      "source": "CNBC / Politics",
-      "category": "Política",
-      "published_at": "2026-11-17T11:22:54Z",
-      "collected_at": "2026-11-19T03:04:15.586655Z"
-    },
-    {
-      "id": "fa49644999356d8d2e97cb0f",
-      "title": "CoreWeave Answered the Biggest Question About AI Stocks. Now Nvidia Has to Confirm It. - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVzZjUENLaFJGZFYwYU55TVA2aHNUTUZtbm5WemlRT2lEa3ljTzA1NElvVXI1eDYtODR1MU9MQnVZUm9JOENvLU5DWm5Jb2FBbVBybFl6TmdsUzZtZkp1S0JRMThIZXU2WGlianR6blNJemJveWJkUmxsSjRqeGRBeHdJdkN2QUVNZ2w1SlNfamJFNEsweFVJeURLRUZydnh6UG13?oc=5",
-      "source": "Yahoo Finance",
-      "category": "Mercados",
-      "published_at": "2026-11-17T11:03:01Z",
-      "collected_at": "2026-11-19T03:04:15.586655Z"
-    },
-    {
-      "id": "659a2d85aa22cdfbc606a11e",
-      "title": "JD Vance says he'll decide 'sometime next year' about 2028 presidential run",
-      "url": "https://www.cnbc.com/2026/11/17/jd-vance-2028-presidential-run-decision.html",
-      "source": "CNBC / Politics",
-      "category": "Política",
-      "published_at": "2026-11-17T10:40:56Z",
-      "collected_at": "2026-11-19T03:04:15.586655Z"
-    },
-    {
-      "id": "fb78f582dad299f026ad4088",
-      "title": "Euro zone economy seen growing moderately, France outlook weakest -Commission - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNc2k3bXJscXRZNnlPa3VxNTREb3djN2dXWVhFS1hwQ1ZFUkU0OF9KWnlLdFRPNHF1VEpVRGd2cmhJTGFDTnd4QTN4R0pmWmRtTkV2S1JuUTlBUTNCMzZxVDk0cEJWMzE5TjBVaVJwaFpJdzZ3TmRuWUNxeHpwSTJvbTZ4d0hQY284dmk0QWtLM0ZaQ0x0aHRZV1NxbHdaTzAxSTV3QmdsaExSTlJwb002RmZEYU93Qlk2?oc=5",
-      "source": "Reuters",
-      "category": "Mercados",
-      "published_at": "2026-11-17T10:08:37Z",
-      "collected_at": "2026-11-19T03:04:15.586655Z"
-    },
-    {
-      "id": "a4261dadb1700386ef00d52d",
-      "title": "Trump’s accounts traded up to $97.5 million in Nvidia as Huang gained White House access",
-      "url": "https://www.cnbc.com/2026/11/16/trump-nvidia-stock-trades-jensen-huang.html",
-      "source": "CNBC / Politics",
-      "category": "Política",
-      "published_at": "2026-11-17T10:08:32Z",
-      "collected_at": "2026-11-19T03:04:15.586655Z"
-    },
-    {
-      "id": "b9a5de5a8d43325a48b4adde",
-      "title": "Precio del dólar en México hoy, martes 17 de noviembre de 2026: tipo de cambio USD a MXN, cuánto vale y cotización de Banxico - El Comercio Perú",
-      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQUzBTY2N2RVd4YlVrR09EMl9YX2g5RUV0ZlR5dFN1WmFteC1LSnBHTmxkVnU5Zm9MWTJFcHdHZlQyNGhCNEl3emN5VUFyWUZ1TDlpZWtiMXExUThJVjVNVFFuM0RFZ2JFU3lwTnJZTEtQT2pfOGdKTUpMQ3A5eG9CNjRMRTVHaHhicVU0RkZCTzE5Ti1YaGl3YlFrQUstWF83ZTAteGJqSmR6WEVlXzdQZmt2VktKbTdVVVY1X2NLLWFVUUlISFBEMHVXYUZfZV95bE4wTFdfRS13ZmZwSHdrRlQ2NTEzOTBRTFdfNWVNLV8zaWZwU1ZrZ2xHeTB6aFVZb2k1U2pDc3gwTFlhT1NMT2t4VQ?oc=5",
-      "source": "El Comercio Perú",
-      "category": "México",
-      "published_at": "2026-11-17T10:00:00Z",
-      "collected_at": "2026-11-19T03:04:15.586655Z"
-    },
-    {
-      "id": "b8cc1d5c48100697446724cc",
-      "title": "U.S. companies from Nvidia to Apple face a growing China dilemma",
-      "url": "https://www.cnbc.com/2026/11/17/us-tech-firms-china-ties-political-pressure.html",
-      "source": "CNBC / Finance",
-      "category": "Mercados",
-      "published_at": "2026-11-17T08:52:45Z",
-      "collected_at": "2026-11-19T03:04:15.586655Z"
-    },
-    {
-      "id": "04e18326e15dfe448ac736aa",
-      "title": "Treasury yields moderate as investors parse retail sales data - CNBC",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4xcWR1OGh2RVFmcDRsR1JtUDJUVFhqWFVjQ3R2V1ZjSFpqWmNtRXQweHFac0UxYllNRzJ2akQ0R2Q3dTFpTkhGeWFMS3d4MFNIX1pMWW5oUWxyQzh2bV8zcG91MlVCNm5kNlVXN3dmMG1pVWYycHFR0gF8QVVfeXFMTlpoUmZfei1Qbjl3OU9tR3A4MmlvbXNIR3FXa1JaRW5CMm5qQmgwcVBRMlFGa1BFc243bG5vR1hJVjBhYVJvMDVmNmstX2M3ME93cjZUbXc5dE5IWHJ5bndwRlJOLUNBTDBEY08tTUVMdG12c0VpemV3VUQtSw?oc=5",
-      "source": "CNBC",
-      "category": "Estados Unidos",
-      "published_at": "2026-11-17T08:23:51Z",
-      "collected_at": "2026-11-19T03:04:15.586655Z"
-    },
-    {
-      "id": "73d639075775c94b6074dd4a",
-      "title": "Déficit fiscal de México superaría 4% del PIB por sexto año consecutivo en 2027 - EL CEO",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOd2xlQzh1RHAxZjdtY05oMEhqcGVHcmNOLUg4QjJ6eXF0Z2N6S1hWWGxHSDZScGZueXlIZlRnN3FBVkJwbGFGeldIeDdGbGU5Tk9OMFNPZEh5di1QOGplMzdySUJtTnNiaGJjMW50MzV1eUk3akNGc2ZTWTl0YnRxa0ZXWW5GR01TSlpMN0VIZHZRY256NFRmVUVESQ?oc=5",
-      "source": "EL CEO",
-      "category": "Política",
-      "published_at": "2026-11-17T08:03:29Z",
-      "collected_at": "2026-11-19T03:04:15.586655Z"
-    },
-    {
-      "id": "0f6c4a04ab2a4de47cbb4901",
-      "title": "Ancla neoliberal del FMI ata PIB abajo de 2% y necesita 4% - El Vigía",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONEJBa1V2QXRsR0tITzBRVkJPNkFma3ZRUTMzbWdwRXd1RFJibzFaNDY5eU0tN3JPOEpQXzBsNnlqN3VSaVZnR3RWRDZ0Umc1d0Y1QnpBNFV2ZGJDRGpEM3FmbWVhVGJ1V3lOVEl5V2VQM3IyM1AzN01ZZDA2MmI1XzNwMzJ0bl96Z0IwdldzTzFQMjE0VHg3cTZrb1FtUDBzLVA0c1JQYmhKTHJOQjRDVW1B?oc=5",
-      "source": "El Vigía",
-      "category": "México",
-      "published_at": "2026-11-17T08:00:00Z",
-      "collected_at": "2026-11-19T03:04:15.586655Z"
-    },
-    {
-      "id": "114fb5e494d93e86342ad7d8",
-      "title": "Inflación en México podría acercarse al 4% en diciembre por aumento del consumo - El Sol de México",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxObzg5YzYtWFZxN1Z5S2JLYjM0VW1YY3Z6dC16Ulk2dWNKZ1NNc3EweUxUTGF5SWRZZmdXcWg4Z211V0JKTEVwdTUwdVlWVnJ6MjNFYlhuNFdWRlEyMV9MUWdoZzhjQlotd2s0VVFyc1hFZlZBMFhkLVNRdmpEbEpWbWw3aGpXRzlOa2h4dDh4alZYYUQ1X0J4VWVOTkJMRG1oclR6UXB3MkxiUzhJelZSQmdlU1dnYlhqVDkybVFKWDdRbDJGaUE?oc=5",
-      "source": "El Sol de México",
-      "category": "México",
-      "published_at": "2026-11-17T07:35:47Z",
-      "collected_at": "2026-11-19T03:04:15.586655Z"
-    },
-    {
-      "id": "c2f50ce27a75bdc021538f79",
-      "title": "CSP: misión en China - El Economista",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOX2F4RGdPZ1d1ZUd2YVhZeV9LbTBaQUZ2N2w4b2stbFBQVWNLUkQ2czJ2VDh0R2xZZmF5X0RFYzlYQTBsUDUyRlRma0x6MThJNEhWZlZmX0VaRVlhMGRKNVdkcVROTHdQUnNpNkZiWFI1R2RleDlscDNnQ21DLURhajlEa9IBiAFBVV95cUxQcU5qbmJpVGVhdWlFYnV5bkRKbzdwTUtYME0ycFUya2w1M2xzOVJ0MHI5dU9TY0RLQXBPOUx2YTA2QVVTaUFRNWQ3TXZQNkV0N3VlZ3RpNm5xWURVUmpIaW9GWi0xTU1FdERXYzk5bk5Nd1BlUGlSWFN1c0ZHZ2VLWGxpdjdqTVNN?oc=5",
-      "source": "El Economista",
-      "category": "México",
-      "published_at": "2026-11-17T07:29:33Z",
       "collected_at": "2026-11-19T03:04:15.586655Z"
     }
   ]
